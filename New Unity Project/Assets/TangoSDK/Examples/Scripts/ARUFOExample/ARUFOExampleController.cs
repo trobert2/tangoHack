@@ -65,7 +65,7 @@ public class ARUFOExampleController : MonoBehaviour {
 		                                      arcamera.transform.position.y, 
 		                                      arcamera.transform.position.z);
 		
-		GameObject newUFOObject = (GameObject)Instantiate(Resources.Load("Prefabs/key/key"), 
+		GameObject newUFOObject = (GameObject)Instantiate(Resources.Load("Prefabs/key"), 
 		                                                  objectPosition, 
 		                                                  Quaternion.identity);
 		newUFOObject.transform.parent = arcamera.gameObject.transform;
@@ -79,7 +79,7 @@ public class ARUFOExampleController : MonoBehaviour {
 		                                      arcamera.transform.position.y, 
 		                                      arcamera.transform.position.z);
 		
-		GameObject newUFOObject = (GameObject)Instantiate(Resources.Load("Prefabs/knob/knob"), 
+		GameObject newUFOObject = (GameObject)Instantiate(Resources.Load("Prefabs/knob"), 
 		                                                  objectPosition, 
 		                                                  Quaternion.identity); 
 		newUFOObject.transform.parent = arcamera.gameObject.transform;
