@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlaceUFOBtn : TouchableObject {
+public class DestroyUFOBtn : TouchableObject {
 	
 	public ARUFOExampleController arUfoExampleController;
 	public Texture2D touchUpTexture;
