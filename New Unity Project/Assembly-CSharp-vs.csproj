@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARMeasurements\ARMeasurements.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\ARUFOExampleController.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\DestroyUFOBtn.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\PlaceUFOBtn.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\UFOCloseBtn.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\UFOController.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\UFOGUIController.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\UFOGlobals.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\ARUFOExample\UFOParticleDestory.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Depth2Mesh\FrustrumLineRender.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Depth2Mesh\MeshGenerate.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Depth2Mesh\ThirdPersonCamController.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\DepthFilter\DepthTextureRender.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\DepthOcclusion\PostProcessOcclusion.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\FileSearch.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\FilesInAssets.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\GUITools\TouchableObject.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\Button.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\DebugCamera.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\FileListViewer.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\GUI_Debug.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\GUI_LoadMap.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\GUI_RecordMap.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\RunTimePath.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\StatusDisplay.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\SparseMapper\TrailManager.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Utilities\ApplicationQuit.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Utilities\FPS.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\Utilities\Helper.cs" />
+     <Compile Include="Assets\TangoSDK\Examples\Scripts\WeightsTreeLoader.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Common\Common.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Common\ErrorHandler.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Common\NotificationErrorHandler.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Common\OrientationManager.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Common\Plugin.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\HardwareParameters.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\Navigator.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\Synchronizer.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\Version.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\VideoMode.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Interfaces\VideoOverlayRenderer.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Utils\DebugLogger.cs" />
+     <Compile Include="Assets\TangoSDK\Scripts\Utils\TangoFlyCam.cs" />
+     <Compile Include="Assets\TangoSDK\UnitTests\Scripts\DepthImageAvailability.cs" />
+     <Compile Include="Assets\TangoSDK\UnitTests\Scripts\MemoryPinning.cs" />
+     <Compile Include="Assets\TangoSDK\UnitTests\Scripts\NInputLayerUnitTest.cs" />
+     <Compile Include="Assets\TangoSDK\UnitTests\Scripts\NVideoModeUnitTest.cs" />
+     <None Include="Assets\TangoSDK\Examples\Shaders\NoFaceCulling.shader" />
+     <None Include="Assets\TangoSDK\Examples\Shaders\DepthFilter\ColorDepthBlend.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\GussainBlur.shader" />
+     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\NormalDisplay.shader" />
+     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\DepthOcclusion.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
