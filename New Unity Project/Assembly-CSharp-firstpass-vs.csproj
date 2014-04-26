@@ -47,12 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-     <None Include="Assets\TangoSDK\Examples\Shaders\NoFaceCulling.shader" />
-     <None Include="Assets\TangoSDK\Examples\Shaders\DepthFilter\ColorDepthBlend.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\NoFaceCulling.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthFilter\ColorDepthBlend.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\GussainBlur.shader" />
-     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\NormalDisplay.shader" />
-     <None Include="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\DepthOcclusion.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\GussainBlur.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\NormalDisplay.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\DepthOcclusion.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

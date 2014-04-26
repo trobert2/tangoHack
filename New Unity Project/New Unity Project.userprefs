@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TangoSDK\Examples\Scripts\ARUFOExample\DestroyUFOBtn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TangoSDK\Examples\Scripts\DepthOcclusion\PostProcessOcclusion.cs">
     <Files>
-      <File FileName="Assets\TangoSDK\Examples\Scripts\ARUFOExample\DestroyUFOBtn.cs" Line="15" Column="42" />
-      <File FileName="Assets\TangoSDK\Examples\Scripts\ARUFOExample\PlaceUFOBtn.cs" Line="1" Column="1" />
-      <File FileName="Assets\TangoSDK\Examples\Scripts\ARUFOExample\ARUFOExampleController.cs" Line="72" Column="58" />
+      <File FileName="Assets\TangoSDK\Examples\Scripts\DepthOcclusion\PostProcessOcclusion.cs" Line="35" Column="1" />
+      <File FileName="Assets\TangoSDK\Examples\Shaders\DepthOcclusion\DepthOcclusion.shader" Line="1" Column="1" />
+      <File FileName="Assets\TangoSDK\Examples\Scripts\SparseMapper\Button.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
