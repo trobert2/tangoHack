@@ -3,14 +3,14 @@ using System.Collections;
 
 public class AddKnobButton : TouchableObject {
 	
-	public ARController arExampleController;
+	public ARController arController;
 	public Texture2D touchUpTexture;
 	public Texture2D touchDownTexture;
 	
 	protected override void TouchUp ()
 	{
 		base.TouchUp ();
-		arExampleController.AddKnob ();
+		arController.AddEgg ();
 		renderer.material.mainTexture = touchUpTexture;
 		if (!Globals.isShowedTouchToAddText)
 			Globals.isShowedTouchToAddText = true;

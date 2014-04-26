@@ -52,6 +52,7 @@
      <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthFilter\ColorDepthBlend.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\GussainBlur.shader" />
+     <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Materials\prototype_textures\readme.txt" />
      <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\NormalDisplay.shader" />
      <None Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Shaders\DepthOcclusion\DepthOcclusion.shader" />
   </ItemGroup>

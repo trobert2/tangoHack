@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ARController : MonoBehaviour {
 
+	public ARController arController;
 	public Transform arcamera;
 	public GameObject tutorialObject;
 	public GameObject explosionFlashObject;
@@ -10,65 +11,59 @@ public class ARController : MonoBehaviour {
 	private GameObject newObject;
 
 	void Start()
-	{
-		StartCoroutine (StartTutorial ());
-		explosionFlashObject.guiTexture.pixelInset = 
-			new Rect (-Screen.width / 2, -Screen.height / 2, Screen.width, Screen.height);
+	{	int score;
+		explosionFlashObject.guiTexture.pixelInset = new Rect (-Screen.width / 2, -Screen.height / 2, Screen.width, Screen.height);
+		arController.AddEgg ();
+		//start timer
 	}
 
-	// Blink the tutorial text
-	IEnumerator StartTutorial()
+	public void AddEgg()
 	{
-		while (!Globals.isShowedTouchToAddText) 
-		{
-			tutorialObject.SetActive(!tutorialObject.activeInHierarchy);
-			yield return new WaitForSeconds(0.7f);
+		Vector3 objectPosition = new Vector3 (arcamera.transform.position.x, 
+		                                      arcamera.transform.position.y, 
+		                                      arcamera.transform.position.z);
+		int egg = Random.Range (1, 6);
+
+		if (egg == 1) {
+			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob1"), objectPosition, Quaternion.identity);
+		} else if (egg == 2) {
+			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob2"), objectPosition, Quaternion.identity);
+		} else if (egg == 3) {
+			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob3"), objectPosition, Quaternion.identity);
+		} else if (egg == 4) {
+			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob4"), objectPosition, Quaternion.identity);
+		}else if (egg == 5) {
+			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob5"), objectPosition, Quaternion.identity);
 		}
-		tutorialObject.SetActive (false);
-		yield return null;
+		//TODO(ADI): Add random values for vector for egg spawn.
+		newObject.transform.parent = arcamera.gameObject.transform;
+		newObject.transform.localPosition = new Vector3 (0f, -0.1f, 0.5f);
+		newObject.transform.parent = gameObject.transform;
 	}
 
-	// Destory all s
-	public void Destorys()
+	// Destory all Eggs
+	public void DestroyEggs()
 	{
 		if (transform.childCount == 0)
 			return;
-		audio.Play ();
-		StartCoroutine (FadeOutGUITexture (explosionFlashObject.guiTexture));
-#if UNITY_ANDROID
+		#if UNITY_ANDROID
 		Handheld.Vibrate ();
-#endif
-		foreach (Transform child in transform) 
+		#endif
+		foreach (Transform child in transform)
 		{
 			Destroy(child.gameObject);
 		}
 	}
 
-	IEnumerator FadeOutGUITexture(GUITexture tex)
-	{
-		const float totalTime = 0.7f;
-		float counter = 0.0f;
-		Color tempColor = Color.white;
-		while (counter<=totalTime) 
-		{
-			tempColor.a = Mathf.Lerp(1.0f, 0.0f, counter/totalTime);
-			tex.color = tempColor;
-			counter += Time.deltaTime;
-			yield return null;
+	public int GetScore (int time){
+		int score = 50;
+		if (time < 25 && time > 20) {
+			score = 40;
+		} else if (time < 20 && time > 10) {
+			score = 30;
+		} else if (time < 10){
+			score = 20;
 		}
-	}
-
-	public void AddKnob()
-	{
-		Vector3 objectPosition = new Vector3 (arcamera.transform.position.x, 
-		                                      arcamera.transform.position.y, 
-		                                      arcamera.transform.position.z);
-		
-		GameObject newObject = (GameObject)Instantiate(Resources.Load("Prefabs/knob"), 
-		                                                  objectPosition, 
-		                                                  Quaternion.identity); 
-		newObject.transform.parent = arcamera.gameObject.transform;
-		newObject.transform.localPosition = new Vector3 (0f, -0.1f, 0.5f);
-		newObject.transform.parent = gameObject.transform;
-	}
+		return score;
+		}
 }
