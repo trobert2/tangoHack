@@ -59,15 +59,6 @@
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\FileSearch.cs" />
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\FilesInAssets.cs" />
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\GUITools\TouchableObject.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\Button.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\DebugCamera.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\FileListViewer.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\GUI_Debug.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\GUI_LoadMap.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\GUI_RecordMap.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\RunTimePath.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\StatusDisplay.cs" />
-     <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\SparseMapper\TrailManager.cs" />
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\Utilities\ApplicationQuit.cs" />
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\Utilities\FPS.cs" />
      <Compile Include="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\Utilities\Helper.cs" />

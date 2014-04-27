@@ -1,29 +1,22 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ARController : MonoBehaviour {
 
-	public ARController arController;
 	public Transform arcamera;
 	public GameObject tutorialObject;
-	public GameObject explosionFlashObject;
 
-	private GameObject newObject;
-
-	void Start()
-	{	int score;
-		explosionFlashObject.guiTexture.pixelInset = new Rect (-Screen.width / 2, -Screen.height / 2, Screen.width, Screen.height);
-		arController.AddEgg ();
-		//start timer
-	}
-
+	public GameObject newObject;
+	
 	public void AddEgg()
 	{
 		Vector3 objectPosition = new Vector3 (arcamera.transform.position.x, 
 		                                      arcamera.transform.position.y, 
 		                                      arcamera.transform.position.z);
 		int egg = Random.Range (1, 6);
-
+		//TODO(ADI): Add random values for vector for egg spawn. If position is behind object, oclusion!!! 
+		//Get somehow left/right front back walls limits relative to objectPosition.
+ 
 		if (egg == 1) {
 			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob1"), objectPosition, Quaternion.identity);
 		} else if (egg == 2) {
@@ -35,9 +28,9 @@ public class ARController : MonoBehaviour {
 		}else if (egg == 5) {
 			GameObject newObject = (GameObject)Instantiate (Resources.Load ("Prefabs/knob5"), objectPosition, Quaternion.identity);
 		}
-		//TODO(ADI): Add random values for vector for egg spawn.
+
 		newObject.transform.parent = arcamera.gameObject.transform;
-		newObject.transform.localPosition = new Vector3 (0f, -0.1f, 0.5f);
+		newObject.transform.localPosition = new Vector3 (0.5f, 0f, 0.5f);
 		newObject.transform.parent = gameObject.transform;
 	}
 

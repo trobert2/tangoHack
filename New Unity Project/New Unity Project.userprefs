@@ -1,14 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Timer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\DepthOcclusion\PostProcessOcclusion.cs">
     <Files>
-      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\ARController.cs" Line="69" Column="1" />
+      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\ARController.cs" Line="39" Column="1" />
+      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\ARController.cs" Line="1" Column="1" />
       <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\CloseBtn.cs" Line="1" Column="1" />
-      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Controller.cs" Line="21" Column="58" />
+      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Controller.cs" Line="1" Column="1" />
       <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Globals.cs" Line="1" Column="1" />
       <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\GUIController.cs" Line="1" Column="1" />
       <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\ParticleDestroy.cs" Line="1" Column="1" />
-      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Timer.cs" Line="14" Column="44" />
+      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\EasterEgg\Timer.cs" Line="1" Column="1" />
+      <File FileName="Assets\TangoSDK\EasterEggProjectAndHelpers\Scripts\DepthOcclusion\PostProcessOcclusion.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
